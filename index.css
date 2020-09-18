@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: auto;
+    justify-content: space-around;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+.leftpart {
+    width: 50%;
+}
+h2 {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+h3 {
+    padding: 8px 8px 8px 0px;
+
+}
+label {
+    display: inline-block;
+    margin: 10px 10px 10px 0;
+}
+input {
+    width: 93%;
+    height: 27px;
+    border: 0px;
+    margin-left: 5px;
+    padding: 0 0 0 6px;
+}
+i {
+    width: 15px;
+    opacity: 0.5;
+    padding: 5px;
+}
+.boxes {
+    display: inline-block;
+    width: 93%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;   
+}
+
+.downpart {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width:80% ;
+}
+.downpart > div {
+    box-sizing: border-box;
+}
+select {
+    width:75%;
+    height: 27px;
+    border: 0px;
+    margin-left: 0px;
+    padding: 0 0 0 6px;
+}
+
+.boxes2 {
+    width: 110%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;   
+    box-sizing: border-box;
+}
+.boxes3 {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;   
+}
+#postcode{
+    
+    width: fit-content ! important;
+
+}
+#box{
+     width: 15px;
+     margin-top: 15px;
+     
+}
+#labelbox {
+    position: relative;
+    top: -8px;
+    margin: 0 0 0 5px !important;
+    display: inline;
+}
+
+button {
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    width: 20%;
+    border-radius: 5px;
+    box-shadow: none;
+    float: right;
+    position: relative;
+    right: 40px;
+}
+
+.rightpart{
+    display: inline-block;
+    width: 50%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.1);
+    
+    
+}
+.product {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    margin: 25px;
+    flex-grow: 100px;
+    
+}
+.productright {
+    display: flex;
+    flex-flow: column wrap;
+    width: 55%;
+    flex-shrink: 500px;
+    
+
+  
+}
+.productright > p {
+    padding: 10px;
+
+}
+#minimize {
+    font-size: 12px;
+}
+span {
+    color: orangered;
+
+}
+img {
+    width: 100px;
+    border-radius: 7px;
+}
+
+.plusminus {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 65%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 5px;
+}
+
+
+.plusminus p{
+    padding: 5px 5px 5px 10px;
+}     
+
+table {
+    width: 70%;
+    margin: 2px 0 0 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    
+}
+@media screen and (max-width:1024px){
+    .rightpart{
+        width: 300px;
+    }
+    button {
+        padding: 3px;
+    }
+    input {
+        width: 248px;
+    }
+    .boxes {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .container {
+        width: 100%;
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .rightpart {
+        top: -40px;
+        position: relative;
+    }
+}
+@media screen and (max-width:425px){
+
+    .container {
+        width: 100%;
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .rightpart {
+        top: 30px;
+        position: relative;
+    }
+    input {
+        width: 165px;
+    }
+    .boxes {
+        width: 90%;
+    }
+    button {
+        padding: 3px;
+        font-size: 0.6rem;
+        width: 50px;
+        right: 0px;
+    }
+    .boxes3 {
+        width: 210px;
+    }
+}
+@media screen and (max-width:375px){
+    .container {
+        width: 100%;
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .rightpart {
+        top: 20px;
+        position: relative;
+        width: 90%;
+    }
+    .leftpart {
+        position: relative;
+        top: 30px;
+    }
+    input {
+        width: 140px;
+    }
+    .boxes {
+        width: 100%;
+    }
+    button {
+        padding: 3px;
+        font-size: 0.6rem;
+        width: 50px;
+        right: 0px;
+    }
+    .boxes3 {
+        width: 210px;
+    }
+    #labelbox {
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width:375px){
+    .container {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    input {
+        width: 120px;
+    }
+    .boxes {
+        width: 110%;
+    }
+    button {
+        padding: 3px;
+        font-size: 0.6rem;
+        width: 50px;
+        right: 0px;
+    }
+    .boxes3 {
+        width: 210px;
+    }
+    #labelbox {
+        font-size: 0.7rem;
+    }
+}

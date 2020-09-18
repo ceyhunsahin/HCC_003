@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout HCC_03</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/f95ea8e290.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h2 style ="text-align:center; margin:0px; ">Checkout</h2>
+    <div class="container">
+        <div class="leftpart">
+            <h3>Contact information</h3> 
+            <label for="email">Email</label><br>
+            <div class="boxes">
+            <i class="fas fa-envelope"></i>
+            <input type="email" name="email" id="email" placeholder="Enter your email..."><br>
+            </div> <br>
+            <label for="phone">Phone</label><br>
+            <div class="boxes">
+            <i class="fas fa-phone-alt"></i>
+            <input type="tel" name="phone" id="phone " placeholder="Enter your phone..."><br>
+            </div> <br> <br>
+            <h3>Shipping address</h3>
+            <label for="name">Full name</label><br>
+            <div class="boxes">
+            <i class="fas fa-user"></i>
+            <input type="name" name="name" id="name" placeholder="Enter your Full name..."><br>
+            </div><br>
+            <label for="address">Address</label><br>
+            <div class="boxes">
+            <i class="fas fa-house-user"></i>
+            <input type="address" name="address" id="address" placeholder="Enter your address..."><br>
+            </div><br>
+            <label for="city">City</label><br>
+            <div class="boxes">
+            <i class="fas fa-city"></i>
+            <input type="city" name="city" id="city" placeholder="Enter your city..."><br>
+            </div><br>
+            <div class="downpart">
+                <div>
+                    <label for="country">Country</label>
+                    <div class="boxes2">
+                    <i class="fas fa-globe-europe"></i>
+                    <select name="country" id="country"><br>
+                    <option value="Turkey" selected>Turkey</option><br>
+                    <option value="Greece" >Greece</option><br>
+                    <option value="France" >France</option><br>
+                    </select><br>
+                    </div>
+                </div>
+                <div>
+                    <label for="postcode">Post Code</label><br>
+                    <div class="boxes3">
+                    <i class="fas fa-mail-bulk"></i>
+                    <input type="postcode" name="postcode" id="postcode" placeholder="Enter your Postal code...">
+                    </div>
+                </div>
+            </div>
+            <input type="checkbox" name="box" id="box" requested> 
+            <label for="box" id="labelbox">See this information next time</label> <br>
+            <button type="submit">Continue</button>
+        </div>
+        <div class="rightpart">
+            <div class="product">
+                <img src="./IMG/photo1.png" alt="bag">
+                <div class="productright">
+                    <p>Vintage Backbag</p>
+                    <p><span>$54.99</span> <strike id="minimize">$94.99</strike></p>
+                    <div class="plusminus">
+                        <i class="fas fa-minus"></i>
+                        <p>1</p>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./IMG/photo2.png" alt="shoe">
+                <div class="productright">
+                    <p>Levi Shoes</p>
+                    <p><span>$74.99</span> <strike id="minimize">$124.99</strike></p>
+                    <div class="plusminus">
+                        <i class="fas fa-minus"></i>
+                        <p>1</p>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div >
+                <table>
+                <tr >
+                    <td>Shipping</td>
+                    <td style="float: right;">$19</td>
+                </tr> 
+                </table>
+                <table>
+                <tr>
+                    <td>Total</td>
+                    <td style="float: right;">$148.98</td>
+                </tr>
+            </table>
+            </div>
+        </div>
+    </div> 
+    <script>
+        x()
+        function x(){
+        var a = ['dog','cat','hen'];
+        a[100] = 'fox';
+        a[99]
+        console.log(a[100])}
+    </script>  
+</body>
+</html>
